@@ -7,7 +7,7 @@ use App\Http\Controllers\WantController;
 use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
-    return Inertia::render('Dashboard');
+    return Inertia::render('Welcome');
 })->name('home');
 
 Route::get('dashboard', DashboardController::class)->middleware(['auth', 'verified'])->name('dashboard');

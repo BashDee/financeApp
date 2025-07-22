@@ -12,7 +12,7 @@ class WantController extends Controller
     public function index()
     {
         $wants = Want::where('user_id', Auth::id())->latest()->get();
-        return Inertia::render('NeedsWants', [
+        return Inertia::render('Wants', [
             'wants' => $wants,
         ]);
     }

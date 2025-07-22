@@ -7,12 +7,13 @@ use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Auth;
 
+
 class NeedController extends Controller
 {
     public function index()
     {
         $needs = Need::where('user_id', Auth::id())->latest()->get();
-        return Inertia::render('NeedsWants', [
+        return Inertia::render('Needs', [
             'needs' => $needs,
         ]);
     }

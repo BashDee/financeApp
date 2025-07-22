@@ -61,6 +61,7 @@ const chartOptions = {
                 <div class="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border p-4">
                     <div class="flex justify-between items-center mb-2">
                         <h2 class="font-bold">Needs</h2>
+                        
                         <span class="text-green-600 font-semibold">{{ needSum }}</span>
                     </div>
                     <ul v-if="needs.length" class="space-y-1">
